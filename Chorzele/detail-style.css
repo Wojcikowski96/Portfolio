@@ -1,0 +1,79 @@
+
+body 
+{
+    background-color: white;
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    
+
+}
+@font-face {
+    font-family: 'Antykvwa';
+    src: url(AntykwaTorunska-Regular.ttf);
+}
+html{
+    padding: 15px;
+    margin: 0px;
+}
+
+h1.banner{
+    color: white;
+    background-color: brown;
+    width: 100%;
+    text-align: center;
+    line-height: 300%;
+    font-size: 45px;
+   
+    
+}
+.maincontent{
+    position: relative;
+    width: 100%;
+    background-color:whitesmoke;
+    column-gap: 20px;
+    height:100%;
+    display: flex;
+}
+
+h1.date{
+    font-family: 'Antykwa';
+    font-size: 45px;
+}
+
+h1.zaprojektowanesymbole{
+    font-family: 'Antykwa';
+    font-size: 45px;
+}
+
+
+h1.par{
+    font-family: 'Antykwa';
+    text-align: center;
+    text-align: justify;
+}
+.buttons{
+    position: relative;
+    width: 100%;
+    background-color:whitesmoke;
+    column-gap: 20px;
+    height:100%;
+    display: flex;
+}
+.description-images-wrapper{
+    display: flex;
+    width: 100%
+}
+.image-wrapper{
+    width: 30%;
+    margin: auto
+}
+.image-wrapper > img{
+    width:100%
+}
+.image-wrapper > h4.image-label{
+    text-align: center;
+}
+h1.historia{
+    font-size: 45px;
+}

@@ -1,0 +1,63 @@
+.sidebar{
+    width: 30%;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    background-color:  rgba(255, 0, 0, 0.05);
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.insygnia-label{
+    background-color: white;
+    border-top: solid;
+    border-bottom: solid
+}
+
+
+h1.label{
+    font-family: 'Antykwa';
+    margin-top: 0px;
+
+}
+.description{
+    
+    height: 100%;
+    width: 75%;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#herb{
+    width: 90%; 
+}
+#baner{
+    width: 100%;
+}
+.banner-wrapper{
+    margin: auto;
+    width: 60%;
+
+}
+#flaga{
+    width:100%;
+  
+}
+h1.flaga{
+    font-family: 'Antykwa';
+    font-size: 45px;
+}
+
+#pieczec{
+    width: 45%;
+    margin: auto;
+    
+} 
+.pieczecie-row1{
+    display: flex;
+    width: 100%;
+}
+.pieczecie-row2{
+    width: 100%;
+}
