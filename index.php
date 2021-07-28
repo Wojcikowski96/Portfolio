@@ -43,10 +43,7 @@
 </div>
 <?php
 
-include 'connecttodatabase.php';
 include 'displayentries.php';
-
-mysqli_close($con);
 ?>
 </div>
 <div class= "about-us-on-news-sidebar">
