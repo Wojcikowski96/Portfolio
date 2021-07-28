@@ -1,5 +1,5 @@
 <?php
-include 'connecttodatabase.php';
+
 
 $result = mysqli_query($con,"SELECT * FROM blog_entries");
 
@@ -23,7 +23,7 @@ $content = $row['Content'];
 <div class ='description'>
 <?php echo "<p style = 'font-size: 30px'>$content</p>"?> 
 <div class = 'urls-container'>
-<?php include 'urlbuilder.php'?> 
+
 </div>
 </div>
 </div>
@@ -32,5 +32,5 @@ $content = $row['Content'];
 <?php
 
 }
-mysqli_close($con);
+
 ?>
