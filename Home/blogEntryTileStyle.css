@@ -1,0 +1,41 @@
+.entry-tile{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    box-shadow: 3px 3px 5px 6px gainsboro;
+    padding: 20px;
+   
+}
+.entry-header{
+    display: flex; 
+    border-top: solid;
+    border-bottom: solid;
+    height:30% 
+    
+}
+.header-label-gap{
+    width: 15%
+}
+#date-label{
+    width: 30%; 
+    margin: auto
+}
+.entry-body{
+    display: flex;
+    margin-top: 20px
+}
+
+.description{
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%
+}
+.urls-container{
+    display: block;
+
+}
+img{
+    width: 40%;
+    height: 40%
+}

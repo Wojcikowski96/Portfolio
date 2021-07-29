@@ -1,0 +1,104 @@
+#title-Tag-Line {
+    font-size: 20px;
+  }
+  /* .card-item__bg{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    display: block;
+    position: relative;
+    margin: 30px auto;
+    transform: translate(0px, 50px);
+    z-index: 5;
+  } */
+  
+  /* form animation starts */
+  .form {
+    margin-top: 40px;
+    background: #fff;
+    box-shadow: 3px 3px 5px 6px gainsboro;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    
+  /*   z-index: 1; */
+    
+  }
+  ::-webkit-input-placeholder {
+    font-size: 1.3em;
+  }
+  
+
+  .termsConditions{
+    margin: 0 auto 5px 80px;
+  }
+  
+  .pageTitle{
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .secondaryTitle{
+    color: grey;
+  }
+  
+  .name {
+    background-color: #ebebeb;
+    color: white;
+    
+  }
+  .name:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 35px;
+    transition: ease 0.5s;
+  }
+  
+  .email {
+    background-color: #ebebeb;
+    height: 2em;
+  }
+  
+  .email:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 35px;
+    transition: ease 0.5s;
+  }
+  
+  .message {
+    background-color: #ebebeb;
+    overflow: hidden;
+    height: 10rem;
+  }
+  
+  .message:hover {
+    border-bottom: 5px solid #0e3721;
+    height: 12em;
+    transition: ease 0.5s;
+  }
+  
+  .formEntry {
+    display: block;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    transition: all 0.5s ease 0s;
+    width: 80%;
+  }
+  
+  .submit {
+    width: 200px;
+    color: white;
+    background-color:brown;
+    font-size: 20px;
+  }
+  
+  .submit:hover {
+    box-shadow: 3px 3px 5px 6px gainsboro;
+    transform: translateY(-3px);
+    width: 100%;
+    border-top: 5px solid #0e3750;
+    border-radius: 0%;
+  }

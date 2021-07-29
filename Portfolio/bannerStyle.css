@@ -1,0 +1,30 @@
+
+.banner{
+    color: white;
+    background-color: brown;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    
+
+}
+ h1:first-child{
+    font-family: 'Antykwa';
+}
+.projects-status{
+    display: flex;
+    width: 100%
+}
+.projects-done{
+    margin: auto;
+}
+.projects-done:nth-child(1){
+    font-family: 'Antykwa';
+}
+.projects-opinions{
+    margin: auto;
+}
+.projects-opinions:nth-child(2){
+    font-family: 'Antykwa';
+}
+

@@ -1,0 +1,58 @@
+body 
+{
+    background-color:whitesmoke;
+    width: 70%;
+    margin: auto;
+
+
+}
+@font-face {
+    font-family: 'Antykwa';
+    src: url(AntykwaTorunska-Regular.ttf);
+}
+h1{
+    font-family: 'Antykwa';
+}
+html{
+    padding: 15px;
+    margin: 5px;
+}
+
+
+.emptyspace{
+    height: 120px;
+}
+
+
+.news-sidebar{
+    width: 70%;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.news-header{
+    display:flex;
+    background-color: brown; 
+    padding-left: 20px;
+    height: 90px;
+    margin-bottom: 40px;
+}
+.news-header > h1{
+    font-size: 40px;
+    color: white;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+ 
+}
+.about-us-on-news-sidebar{
+    width: 25%;
+    padding-right: 20px;
+    padding-left: 20px
+}
+.about-us-on-news-sidebar > .header{
+    display:flex;
+    background-color: brown; 
+    padding-left: 20px;
+    height: 90px;
+}

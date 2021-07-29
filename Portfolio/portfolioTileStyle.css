@@ -1,0 +1,91 @@
+.tile{
+    box-shadow: 3px 3px 5px 6px gainsboro;
+    text-align: center;
+    height: 840px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+.tile:hover{
+    box-shadow: 0px 0px 2px 2px #ccc;
+    background-color: rgba(255, 0, 0, 0.05);
+}
+
+h1.headerTittle{
+    position: relative;
+    font-family: 'Antykwa';
+    width:100%;
+    height: 15%;
+    border-top: solid ;
+    border-bottom: solid;
+    text-align: center;
+    line-height: 350%;
+    
+}
+img{
+    position: relative;
+    width:270px;
+    height:300px;
+}
+h1.wojewodztwoName{
+    position: relative;
+    font-size: 25px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Antykwa';
+    
+}
+h1.powiatName{
+    position: relative;
+    font-size: 25px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Antykwa';
+    
+}
+
+.bottomDiv{
+    border-top: solid;
+    border-bottom: solid;
+    height: 25%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.designedElements{
+    position: relative;
+    font-style: bold;
+    font-size: 25px;
+    font-family: 'Antykwa';
+    margin: 0px;
+    top: 30px
+
+
+}
+.date{
+    position: relative;
+    font-weight: 100;
+    font-size: 25px;
+    font-family: 'Antykwa';
+    margin: 0px;
+    top: 40px;
+  
+}
+
+.dateDiv{
+    position: relative;
+    height: 50%;
+    
+    
+}
+.designedElementsDiv{
+    position: relative;
+    height: 50%;
+    vertical-align: middle;
+}
+.locationDiv{
+    text-align: center;
+    height: 12%;
+}
+
+
