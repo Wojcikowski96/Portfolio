@@ -11,6 +11,9 @@
   <link rel="stylesheet" type="text/css" href="navigationBarStyle.css">
   <link rel="stylesheet" type="text/css" href="blogEntryTileStyle.css">
   <link rel="stylesheet" type="text/css" href="contactFormStyle.css">
+  
+  <script src="smtp.js" defer></script>
+  <script src="emailSender.js" defer></script>
 
 </head>
 <body>
@@ -56,12 +59,12 @@ mysqli_close($con);
     </div>
     <div class="wrapper">
     <form class="form">
-      <div class="pageTitle title"><h1 style = "font-size: 35px; border-top: solid; border-bottom: solid">Formularz kontaktowy</h1></div>
+      <div class="pageTitle title"><h1 style = "font-size: 35px; border-top: solid; border-bottom: solid; margin-top:0px">Formularz kontaktowy</h1></div>
       <div class="secondaryTitle title">Uzupełnij poniższe pola.</div>
-      <input type="text" class="name formEntry" placeholder="Podaj imię" />
-      <input type="text" class="email formEntry" placeholder="Podaj Email"/>
-      <textarea class="message formEntry"></textarea>
-      <button class="submit formEntry" onclick="thanks()"><h1 style="font-size: 25px">Wyślij</h1></button>
+      <input type="text" class="name formEntry" id="nameInput" placeholder="Podaj imię" />
+      <input type="text" class="email formEntry" id="emailInput" placeholder="Podaj Email"/>
+      <textarea class="message formEntry" id="messageInput"></textarea>
+      <button class="submit formEntry" onclick="js_send()" id="sendMessage"><h1 style="font-size: 25px">Wyślij</h1></button>
     </form>
   </div>
   <script src="app.js"></script>

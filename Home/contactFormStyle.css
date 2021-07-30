@@ -47,10 +47,11 @@
   .name {
     background-color: #ebebeb;
     color: white;
+    height: 2em;
     
   }
   .name:hover {
-    border-bottom: 5px solid #0e3721;
+    border-bottom: 5px solid;
     height: 35px;
     transition: ease 0.5s;
   }
@@ -61,7 +62,7 @@
   }
   
   .email:hover {
-    border-bottom: 5px solid #0e3721;
+    border-bottom: 5px solid;
     height: 35px;
     transition: ease 0.5s;
   }
@@ -73,7 +74,7 @@
   }
   
   .message:hover {
-    border-bottom: 5px solid #0e3721;
+    border-bottom: 5px solid;
     height: 12em;
     transition: ease 0.5s;
   }
@@ -99,6 +100,4 @@
     box-shadow: 3px 3px 5px 6px gainsboro;
     transform: translateY(-3px);
     width: 100%;
-    border-top: 5px solid #0e3750;
-    border-radius: 0%;
   }
