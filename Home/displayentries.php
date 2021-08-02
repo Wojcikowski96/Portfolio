@@ -14,7 +14,7 @@ $entryid = $row['EntryId'];
 
 ?>
 <!-- <div class = "adsdsa" style="background-color: red; height: 200px"></div> -->
-<div class='entry-tile'>
+<div class="entry-tile">
 <div class ='entry-header'>
 <?php echo "<h1>$title</h1>"?>
 <?php echo "<div class ='header-label-gap'></div>"?>  

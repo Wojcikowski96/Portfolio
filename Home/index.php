@@ -11,9 +11,13 @@
   <link rel="stylesheet" type="text/css" href="navigationBarStyle.css">
   <link rel="stylesheet" type="text/css" href="blogEntryTileStyle.css">
   <link rel="stylesheet" type="text/css" href="contactFormStyle.css">
+  <link rel="stylesheet" type="text/css" href="aboutUsStyle.css">
   
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
   <script src="smtp.js" defer></script>
   <script src="emailSender.js" defer></script>
+  <script src="scrollAnimator.js"></script>
+  <script src="hideOnScroll.js"></script>
 
 </head>
 <body>
@@ -40,12 +44,36 @@
     </div>
     <div class = "emptyspace">
     </div>
+    <div class = "about-us-wrapper">
+        <div class = "col">
+            <h1>Co robimy</h1>
+            <p>Projektujemy herby, flagi i inne symbole samorządowe. 
+                Naszym nadrzędnym celem jest poprawa kiepskiego stanu polskiej heraldyki samorządowej. 
+                Profesjonalnie stworzymy herb dla gminy i zajmiemy się całą procedurą. 
+                Doradzimy także przy organizowaniu konkursów na symbole.</p>
+        </div>
+        <div class = "col">
+            <h1>Kim jesteśmy</h1>
+            <p>Tworzymy duet pasjonatów heraldyki, w skład którego wchodzą:
+                Kamil Wójcikowski, interesuje się heraldyką od 9 roku życia, tworzy projekt herbu, flagi i innych symboli oraz produkt końcowy, tj. dokumentację.
+                Robert Fidura, miłośnik archiwistyki, poszukuje potencjalnych klientów i rozmawia z nimi.
+                Wspólnie poszukujemy źródeł historycznych i ikonograficznych, obmyślamy projekty, wszystkie projekty konsultujemy na posiedzeniach Komisji Heraldycznej, redagujemy tekst uzasadnienia projektów.</p>
+        </div>
+        <div class = "col">
+            <h1>Dlaczego my?</h1>
+            <ul><li>Każdy projekt herbu tworzymy z pasją,</li>
+                <li>Należymy do grupy kilku-kilkunastu osób w Polsce, którzy wiedzą jak projektować herby,</li>
+                <li>Większość naszych projektów jest trafna już na samym początku,</li>
+                <li>Działamy do skutku, tj. do uzyskania projektu, który zadowoli zarówno klienta, jak i Komisję Heraldyczną</li></ul>
+        </div>
+    </div>
 
 <div class ="content-flexbox">
 <div class = "news-sidebar">
     <div class="news-header" >
-     <img src = "news.png" style= "width: 60px; height: 60px; margin-top: auto; margin-bottom:auto" alt= "nothing"/>   
-    <h1>Aktualności</h1>
+   <img src = "news.png" style= "width: 60px; height: 60px; margin-top: auto; margin-bottom:auto" alt= "nothing"/>
+   <h1>Aktualności</h1>
+     
 </div>
 <?php
 include 'connecttodatabase.php';
@@ -55,11 +83,10 @@ mysqli_close($con);
 </div>
 <div class= "about-us-on-news-sidebar">
     <div class= "header">
-        <h1 style = "font-size: 25px; color: white; margin-top: auto; margin-bottom: auto">O nas w mediach</h1>
+        <h1 style = "font-size: 40px; color: white; margin-top: auto; margin-bottom: auto">Skontaktuj się<br>z nami</h1>
     </div>
     <div class="wrapper">
     <form class="form">
-      <div class="pageTitle title"><h1 style = "font-size: 35px; border-top: solid; border-bottom: solid; margin-top:0px">Formularz kontaktowy</h1></div>
       <div class="secondaryTitle title">Uzupełnij poniższe pola.</div>
       <input type="text" class="name formEntry" id="nameInput" placeholder="Podaj imię" />
       <input type="text" class="email formEntry" id="emailInput" placeholder="Podaj Email"/>
@@ -67,7 +94,6 @@ mysqli_close($con);
       <button class="submit formEntry" onclick="js_send()" id="sendMessage"><h1 style="font-size: 25px">Wyślij</h1></button>
     </form>
   </div>
-  <script src="app.js"></script>
 </div>
 </div>
 </body>

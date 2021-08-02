@@ -1,4 +1,7 @@
 .tile{
+    position: relative;
+    opacity: 0.25;
+    left: -75px;
     box-shadow: 3px 3px 5px 6px gainsboro;
     text-align: center;
     height: 840px;

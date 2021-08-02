@@ -1,0 +1,48 @@
+.about-us-wrapper{
+    display: flex;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    margin-bottom: 40px;
+    padding: 20px;
+
+}
+.about-us-wrapper > .col{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* .about-us-wrapper > .col p{
+    opacity: 0;
+
+} */
+
+/* .about-us-wrapper > .col ul{
+    opacity: 0;
+
+} */
+
+.about-us-wrapper:hover{
+    height: 500px;
+}
+/* 
+.about-us-wrapper:hover p{
+    opacity: 1;
+}
+.about-us-wrapper:hover ul{
+    opacity: 1;
+} */
+.col > ul > li{
+    font-family: 'Antykwa';
+    font-size: 20px;
+}
+
+.col > p{
+    font-family: 'Antykwa';
+    font-size: 20px;
+}
+.col > h1{
+    border-top: solid;
+    border-bottom: solid;
+    top: 0px;
+}

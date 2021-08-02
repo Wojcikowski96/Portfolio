@@ -3,8 +3,6 @@ body
     background-color:whitesmoke;
     width: 70%;
     margin: auto;
-
-
 }
 @font-face {
     font-family: 'Antykwa';
@@ -22,37 +20,39 @@ html{
 .emptyspace{
     height: 120px;
 }
+.content-flexbox{
+    display: flex;
+}
 
-
-.news-sidebar{
-    width: 70%;
-    padding-left: 20px;
-    padding-right: 20px;
+.news-sidebar{  
+   width: 60%;
+   margin-right: auto
     
 }
 .news-header{
     display:flex;
     background-color: brown; 
-    padding-left: 20px;
-    height: 90px;
+    padding: 20px;
     margin-bottom: 40px;
+    height: 100px;
 }
 .news-header > h1{
     font-size: 40px;
     color: white;
-    margin-left: 20px;
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 40px
  
 }
 .about-us-on-news-sidebar{
-    width: 25%;
-    padding-right: 20px;
-    padding-left: 20px
+    width: 30%;
+    position: relative;
+    left: 0px;
+
 }
 .about-us-on-news-sidebar > .header{
     display:flex;
     background-color: brown; 
-    padding-left: 20px;
-    height: 90px;
+    height: 100px;
+    padding: 20px
 }
