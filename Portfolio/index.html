@@ -13,9 +13,13 @@
   <link rel="stylesheet" href="StyleSheets/portfolioTileStyle.css">
   <link rel="stylesheet" href="StyleSheets/bannerStyle.css">
   <link rel="stylesheet" href="StyleSheets/portfolioGridStyle.css">
-  <script src="tile-generator.js" defer></script>
+  
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <!-- <script src="tile-generator.js" defer></script> -->
+  <script src="buildPortfolioTile.js" defer></script>
+  <script src="optimizedTileGenerator.js" defer></script>
   <script src="scrollAnimator.js"></script>
+  <script src="loading.js"></script>
 
 </head>
 
@@ -54,6 +58,13 @@
             </div>
         </div>
     </div>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+      <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+  
 
 
     <!-- <div class = "contact-grid">

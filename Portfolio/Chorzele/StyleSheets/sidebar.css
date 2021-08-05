@@ -1,4 +1,5 @@
 .sidebar{
+    position: relative;
     width: 30%;
     box-shadow: 3px 3px 5px 6px #ccc;
     background-color:  rgba(255, 0, 0, 0.05);
@@ -6,6 +7,11 @@
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
+    -webkit-animation: fadeinS 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeinS 1s; /* Firefox < 16 */
+     -ms-animation: fadeinS 1s; /* Internet Explorer */
+      -o-animation: fadeinS 1s; /* Opera < 12.1 */
+         animation: fadeinS 1s;
 }
 
 
@@ -22,12 +28,17 @@ h1.label{
 
 }
 .description{
-    
+    position: relative;
     height: 100%;
     width: 75%;
     box-shadow: 3px 3px 5px 6px #ccc;
     padding-left: 30px;
     padding-right: 30px;
+    -webkit-animation: fadeinD 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeinD 1s; /* Firefox < 16 */
+     -ms-animation: fadeinD 1s; /* Internet Explorer */
+      -o-animation: fadeinD 1s; /* Opera < 12.1 */
+         animation: fadeinD 1s;
 }
 #herb{
     width: 90%; 
@@ -60,4 +71,62 @@ h1.flaga{
 }
 .pieczecie-row2{
     width: 100%;
+}
+@keyframes fadeinS {
+    from { opacity: 0.3; right: -200px }
+    to   { opacity: 1; right: 0px }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinS {
+    from { opacity: 0.3; right: -200px }
+    to   { opacity: 1; right: 0px }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinS {
+    from { opacity: 0.3; right: -200px }
+    to   { opacity: 1; right: 0px }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinS {
+    from { opacity: 0.3; right: -200px }
+    to   { opacity: 1; right: 0px }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinS {
+    from { opacity: 0.3; right: -200px }
+    to   { opacity: 1; right: 0px }
+}
+
+
+@keyframes fadeinD {
+    from { opacity: 0.3; left: -200px }
+    to   { opacity: 1; left: 0px }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinD {
+    from { opacity: 0.3; left: -200px }
+    to   { opacity: 1; left: 0px }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinD {
+    from { opacity: 0.3; left: -200px }
+    to   { opacity: 1; left: 0px }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinD {
+    from { opacity: 0.3; left: -200px }
+    to   { opacity: 1; left: 0px }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinD {
+    from { opacity: 0.3; left: -200px }
+    to   { opacity: 1; left: 0px }
 }

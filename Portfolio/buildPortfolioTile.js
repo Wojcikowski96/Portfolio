@@ -1,4 +1,11 @@
+
 var wrapper = document.createElement('div');
+wrapper.setAttribute('class', 'grid-container');
+document.body.appendChild(wrapper);  
+
+function createTile($i){
+
+
 var gminy = ['Gmina Młynarze', 'Miasto i gmina Chorzele', 'Miasto i gmina Stronie Śląskie', 'Gmina Sędziejowice', 'Gmina Kamieniec Ząbkowski', 'Gmina Szelków', 'Gmina Baranowo', 'Gmina Czerwonka', 'Gmina Rzekuń', 'Gmina Radoszyce', 'Gmina Gać', 'Gmina Zarszyn', 'Miasto Racibórz', 'Powiat przysuski', 'Gmina Goworowo', 'Gmina Węgierska Górka', 'Gmina Zakrzówek', 'Miasto i gmina Jedlicze', 'Gmina Dąbrowa Zielona', 'Gmina Malczyce', 'Miasto i gmina Lądek-Zdrój', 'Gmina i miasto Kcynia', 'Gmina Sławatycze', 'Gmina Markowa', 'Gmina i miasto Debrzno', 'Gmina i miasto Bełżyce', 'Powiat gorzowski', 'Gmina Łukowa', 'Gmina Marcinowice', 'Miasto Piechowice', 'Gmina i miasto Żychlin', 'Gmina i miasto Grodków', 'Powiat kędzierzyńsko-kozielski', 'Gmina Pionki', 'Gmina Milejowo', 'Miasto Międzyrzec Podlaski', 'Gmina Lubomia', 'Gmina Świeszyno', 'Gmina Dynów', 'Gmina Strzelce', 'Miasto i Gmina Rogoźno', 'Miasto Giżycko', 'Powiat brzeski', 'Gmina Uścimów', 'Gmina Wieniawa', 'Gmina Łagiewniki', 'Gmina Bukowisko', 'Gmina Radwanice'];
 
 var imageURL = [' https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/POL_gmina_M%C5%82ynarze_COA.svg/1024px-POL_gmina_M%C5%82ynarze_COA.svg.png',
@@ -133,62 +140,61 @@ var resourceFolders = ['Mlynarze', 'Chorzele', 'Stronie',
 'Strzelce', 'Rogozno', 'Gizycko',
 'Brzeski', 'Uscimiow', 'Wieniawa',
 'Lagiewniki', 'Bukowsko',]
-wrapper.setAttribute('class', 'grid-container');
-document.body.appendChild(wrapper);
 
-for (i = 0; i < 48; i++) {
-    var insideGrid = document.createElement('div')
-    var image = document.createElement('img')
-    var mainTile = document.createElement('div');
-    var headerTittle = document.createElement('h1');
-    var wojewodztwoName= document.createElement('h1');
-    var powiatName = document.createElement('h1');
-    var bottomDiv = document.createElement('div');
-    var designedElementsDiv = document.createElement('div');
-    var dateDiv = document.createElement('div');
-    var locationDiv = document.createElement('div');
-    var designedElements = document.createElement('h1');
-    var date = document.createElement('h1');
     
-    insideGrid.setAttribute('class', 'grid-tile-insidor');
-    headerTittle.setAttribute('class', 'headerTittle');
-    wojewodztwoName.setAttribute('class', 'wojewodztwoName');
-    powiatName.setAttribute('class', 'powiatName');
-    image.setAttribute('src', imageURL[i]);
-    designedElementsDiv.setAttribute('class', 'designedElementsDiv');
-    dateDiv.setAttribute('class', 'dateDiv');
-    bottomDiv.setAttribute('class', 'bottomDiv');
-    locationDiv.setAttribute('class', 'locationDiv');
-    designedElements.setAttribute('class', 'designedElements');
-    date.setAttribute('class', 'date');
-    mainTile.setAttribute('class', 'tile');
-    var singleFolder = "window.location.href="+"'"+resourceFolders[i]+"/details.html'";
-    mainTile.setAttribute('onclick', singleFolder);
-    mainTile.setAttribute('style', 'cursor: pointer;');
-    headerTittle.innerHTML += gminy[i];
-    wojewodztwoName.innerHTML +=wojewodztwo[i];
-    powiatName.innerHTML += powiaty[i];
-    designedElements.innerHTML += doneThings[i]
-    date.innerHTML += dates[i];
-    
-    
-    insideGrid.appendChild(headerTittle);
-    insideGrid.appendChild(image);
+if($i <=47){
+  var insideGrid = document.createElement('div')
+  var image = document.createElement('img')
+  var mainTile = document.createElement('div');
+  var headerTittle = document.createElement('h1');
+  var wojewodztwoName= document.createElement('h1');
+  var powiatName = document.createElement('h1');
+  var bottomDiv = document.createElement('div');
+  var designedElementsDiv = document.createElement('div');
+  var dateDiv = document.createElement('div');
+  var locationDiv = document.createElement('div');
+  var designedElements = document.createElement('h1');
+  var date = document.createElement('h1');
+  
+  insideGrid.setAttribute('class', 'grid-tile-insidor');
+  headerTittle.setAttribute('class', 'headerTittle');
+  wojewodztwoName.setAttribute('class', 'wojewodztwoName');
+  powiatName.setAttribute('class', 'powiatName');
+  image.setAttribute('src', imageURL[$i]);
+  designedElementsDiv.setAttribute('class', 'designedElementsDiv');
+  dateDiv.setAttribute('class', 'dateDiv');
+  bottomDiv.setAttribute('class', 'bottomDiv');
+  locationDiv.setAttribute('class', 'locationDiv');
+  designedElements.setAttribute('class', 'designedElements');
+  date.setAttribute('class', 'date');
+  mainTile.setAttribute('class', 'tile');
+  var singleFolder = "window.location.href="+"'"+resourceFolders[$i]+"/details.html'";
+  mainTile.setAttribute('onclick', singleFolder);
+  mainTile.setAttribute('style', 'cursor: pointer;');
+  headerTittle.innerHTML += gminy[$i];
+  wojewodztwoName.innerHTML +=wojewodztwo[$i];
+  powiatName.innerHTML += powiaty[$i];
+  designedElements.innerHTML += doneThings[$i]
+  date.innerHTML += dates[$i];
+  
+  
+  insideGrid.appendChild(headerTittle);
+  insideGrid.appendChild(image);
 
-    locationDiv.appendChild(wojewodztwoName);
-    locationDiv.appendChild(powiatName);
-    
-    insideGrid.appendChild(locationDiv);
-    insideGrid.appendChild(bottomDiv);
-    
-    mainTile.appendChild(insideGrid);
+  locationDiv.appendChild(wojewodztwoName);
+  locationDiv.appendChild(powiatName);
+  
+  insideGrid.appendChild(locationDiv);
+  insideGrid.appendChild(bottomDiv);
+  
+  mainTile.appendChild(insideGrid);
 
-    dateDiv.appendChild(date);
-    designedElementsDiv.appendChild(designedElements);
-    bottomDiv.appendChild(designedElementsDiv);
-    bottomDiv.appendChild(dateDiv);
-    wrapper.appendChild(mainTile);
-    
-
-
+  dateDiv.appendChild(date);
+  designedElementsDiv.appendChild(designedElements);
+  bottomDiv.appendChild(designedElementsDiv);
+  bottomDiv.appendChild(dateDiv);
+  wrapper.appendChild(mainTile);
+  
 }
+
+  }
