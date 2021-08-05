@@ -10,7 +10,7 @@ function buildUrls($entryID){
     
     echo 
     "
-    <a href ='$url'><h1 style ='font-size: 30px; margin-top: 20px'> $urltext </h1></a>";
+    <a href ='$url'><h1 style ='font-size: 25px; margin-top: 20px'> $urltext </h1></a>";
     }
 }
 

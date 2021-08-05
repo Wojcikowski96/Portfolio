@@ -4,74 +4,111 @@
 
 <head>
   <meta charset="utf-8">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
 
   <title>Portfolio projektowe</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
-  <link rel="stylesheet" href="detail-style.css">
-  <link rel="stylesheet" href="button1.css">
-  <link rel="stylesheet" href="button2.css">
-  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="StyleSheets/detail-style.css">
+  <link rel="stylesheet" href="StyleSheets/button1.css">
+  <link rel="stylesheet" href="StyleSheets/button2.css">
+  <link rel="stylesheet" href="StyleSheets/sidebar.css">
+  <link rel="stylesheet" href="StyleSheets/navigationBarStyle.css">
   <script src="MapLocation.js"></script>
 </head>
 
 <body>
+  <div class = "mainnavbar">
+    <a href = "http://localhost/blog/Home/index.php" class = "homebutton" style="text-decoration: none">
+        <img src = "Resources/home-icon.png", alt="nothing", id = "home-icon">
+        <h1>Strona domowa</h1>
+    </a> 
+    
+    <div class = "line">
+
+    </div>
+    <a href = "../index.html" class = "portfoliobutton" style="text-decoration: none">
+        <img src = "Resources/portfolio.png", alt="nothing", id = "portfolio-icon">
+        <h1>Portfolio</h1>
+    </a>
+    <div class = "line">
+        
+    </div>
+    <div class = aboutusbutton>
+        <img src = "Resources/about-us.png", alt="nothing", id = "aboutus-icon">
+        <h1>O nas</h1>
+    </div>
+</div>
+<div class = empty-space>
+
+</div>
   <h1 class="banner">
     Miasto i gmina Chorzele
   </h1>
 
   <div class="maincontent">
     <div class="description">
-
-      <h1 class="par">
-        Gmina miejsko-wiejska w powiecie przasnyskim i województwie mazowieckim. Zamieszkuje ją około 10 200 osób, z czego w samym mieście około 3 100 osób. Miasto Chorzele, lokowane w XV wieku, było miastem królewskim Korony Królestwa polskiego. Prawa miejskie utraciło w 1870 roku i odzyskało w 1919 roku.
-      </h1>
-      <h1 class="date">
+      <div class = "map-and-description-container" style="display: flex;">
+        <div class ="text-container" style= "width: 60%; margin-right: auto;  margin-left: 0px">
+          <h1>O gminie</h1>
+          <p>
+            Gmina miejsko-wiejska w powiecie przasnyskim i województwie mazowieckim. Zamieszkuje ją około 10 200 osób, z czego w samym mieście około 3 100 osób. Miasto Chorzele, lokowane w XV wieku, było miastem królewskim Korony Królestwa polskiego. Prawa miejskie utraciło w 1870 roku i odzyskało w 1919 roku.
+          </p>
+        </div>
+        <div id="mapid" style="height: 300px; width: 35%; margin-left: auto; margin-top: 20px; z-index: 0;">
+          <script>initMap()</script>
+        </div>
+      </div>
+      <h1>
         Herb
       </h1>
-
-      <h1 class="par">
+      <p>
         W polu srebrnym drzewo zielone o trzech korzeniach i dwóch konarach, z których prawy dodatkowo rozgałęziony na dwa mniejsze, na którego szczycie znajduje się owoc karczocha zielony; na lewo od pnia róg myśliwski czarny z okuciami, ustnikiem i wylotem złotymi, ułożony na opak w skos.
-      </h1>
-      <h1 class="par">
+      </p>
+      <p>
         Godło herbowe znane z XVI i XVII-wiecznych pieczęci miejskich. Motyw drzewa z karczochem zaczerpnięty został być może z medalionu królowej Bony autorstwa Jana Marii Padovano. Karczoch to symbol płodności i użyczenie tego motywu herbowi miasta mogło stanowić pomyślną wróżbę na przyszłość. Róg myśliwski dodano zapewne w nawiązaniu do obfitości zwierzyny w okolicznych lasach.
-      </h1>
+      </p>
       <div class="description-images-wrapper">
       <div class="image-wrapper">
-        <img class="image" src="POL_Bona_Sforza_Medal_Awers.png">
-        <h4 class="image-label">
+        <img class="image" src="Resources/POL_Bona_Sforza_Medal_Awers.png">
+        <p class="image-label">
           Medalion królowej Bony
-        </h4>
+      </p>
       </div>
       <div class="image-wrapper">
-        <img class="image" src="1553.png">
-        <h4 class="image-label">
+        <img class="image" src="Resources/1553.png">
+        <p class="image-label">
           Odcisk pieczęci Chorzel na dokumencie z 1553 roku
-        </h4>
+        </p>
       </div>
       <div class="image-wrapper">
-        <img class="image" src="1660.png">
-        <h4 class="image-label">
+        <img class="image" src="Resources/1660.png">
+        <p class="image-label">
           Odcisk pieczęci Chorzel na dokumencie z 1660 roku
-        </h4>
+        </p>
       </div>
       </div>
-      <h1 class="zaprojektowanesymbole">
+      <h1>
         Pozostałe symbole
       </h1>
-      <h1 class="par">
+      <p>
         Razem z herbem opracowane zostały także flaga, banner oraz pieczęcie: ogólna, burmistrza i rady miejskiej.
-      </h1>
-      <h1 class = "historia">
+      </p>
+      <h1>
         Historia
       </h1>
-      <h1 class="par">
+      <p>
         Herb oraz inne symbole gminy Chorzele zostały przyjęte 5 sierpnia 2012 roku.
-      </h1>
+      </p>
       <div class="buttons">
         <div class="button">
-          <a href="Uzasadnienie-Chorzele.pdf" target="_blank" style="text-decoration:none"
-            download="Uzasadnienie-Mlynarze.pdf">
+          <a href="Uzasadnienie-Chorzele.pdf" target="_blank" style="text-decoration:none">
             <div class="content">
               <h1 class="button-description">
                 Uzasadnienie PDF
@@ -80,11 +117,10 @@
           </a>
         </div>
         <div class="button2">
-          <a href="Chorzele.jpg" target="_blank" style="text-decoration:none"
-            download="Referencje_Młynarze.pdf">
+          <a href="Resources/Chorzele.jpg" target="_blank" style="text-decoration:none">
             <div class="content2">
               <h1 class="button-description2">
-                Referencja PDF
+                Referencje PDF
               </h1>
             </div>
           </a>
@@ -97,32 +133,32 @@
           Insygnia gminy
         </h1>
         <image
-          src="Chorzele_1.png"
+          src="Resources/Chorzele_1.png"
           id="herb">
         </image>
         <h1 class="label">
           Herb
         </h1>
       </div>
-      <image src="Chorzele_flaga_fala.png" id="flaga" />
+      <image src="Resources/Chorzele_flaga_fala.png" id="flaga" />
       <h1 class="label">
         Flaga
       </h1>
      <div class="pieczecie-row1">
-      <image src="Chorzele_pieczęć_burmistrz.png" id="pieczec">
+      <image src="Resources/Chorzele_pieczęć_burmistrz.png" id="pieczec">
       </image>
-      <image src="Chorzele_pieczęć_ogólna.png" id="pieczec">
+      <image src="Resources/Chorzele_pieczęć_ogólna.png" id="pieczec">
       </image>
      </div>
      <div class ="pieczecie-row2">
-      <image src="Chorzele_pieczęć_rada.png" id="pieczec">
+      <image src="Resources/Chorzele_pieczęć_rada.png" id="pieczec">
       </image>
      </div>
       <h1 class="label">
         Pieczęcie
       </h1>
       <div class="banner-wrapper">
-        <image src="Chorzele_baner.png" id="baner"/>
+        <image src="Resources/Chorzele_baner.png" id="baner"/>
       </div>
       <h1 class="label">
         Baner

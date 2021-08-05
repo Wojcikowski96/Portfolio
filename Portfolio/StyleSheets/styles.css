@@ -8,9 +8,9 @@ body
 }
 @font-face {
     font-family: 'Antykwa';
-    src: url(AntykwaTorunska-Regular.ttf);
+    src: url(Resources/AntykwaTorunska-Regular.ttf);
 }
-h1{
+h1, p{
     font-family: 'Antykwa';
 }
 html{

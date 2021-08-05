@@ -6,7 +6,7 @@ body
 }
 @font-face {
     font-family: 'Antykwa';
-    src: url(AntykwaTorunska-Regular.ttf);
+    src: url(../Resources/AntykwaTorunska-Regular.ttf);
 }
 h1{
     font-family: 'Antykwa';
@@ -25,7 +25,7 @@ html{
 }
 
 .news-sidebar{  
-   width: 60%;
+   width: 67%;
    margin-right: auto
     
 }

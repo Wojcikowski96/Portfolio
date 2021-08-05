@@ -23,7 +23,7 @@ $entryid = $row['EntryId'];
 <div class ='entry-body'>
 <?php echo "<img src = $imageurl style='margin: auto; margin-left:0px'/>"?>  
 <div class ='description'>
-<?php echo "<p style = 'font-size: 30px'>$content</p>"?> 
+<?php echo "<p>$content</p>"?> 
 <div class = 'urls-container'>
 <?php buildUrls($entryid) ?> 
 </div>

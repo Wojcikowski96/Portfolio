@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Antykwa';
+    src: url(AntykwaTorunska-Regular.ttf);
+}
 .entry-tile{
     position: relative;
     background-color: #fff;
@@ -34,6 +38,10 @@
     margin-left: auto;
     margin-right: auto;
     width: 55%
+}
+p{
+    font-size: 25px; 
+    font-family: 'Antykwa';
 }
 .urls-container{
     display: block;

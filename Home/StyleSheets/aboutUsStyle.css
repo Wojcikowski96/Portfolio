@@ -1,9 +1,9 @@
 .about-us-wrapper{
     display: flex;
-    transition: height 0.5s;
-    -webkit-transition: height 0.5s;
     margin-bottom: 40px;
     padding: 20px;
+    background-attachment: fixed;
+   height: 400px
 
 }
 .about-us-wrapper > .col{
@@ -22,9 +22,9 @@
 
 } */
 
-.about-us-wrapper:hover{
+/* .about-us-wrapper:hover{
     height: 500px;
-}
+} */
 /* 
 .about-us-wrapper:hover p{
     opacity: 1;

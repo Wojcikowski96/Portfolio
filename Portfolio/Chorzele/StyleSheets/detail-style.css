@@ -9,12 +9,15 @@ body
 
 }
 @font-face {
-    font-family: 'Antykvwa';
-    src: url(AntykwaTorunska-Regular.ttf);
+    font-family: 'Antykwa';
+    src: url(../Resources/AntykwaTorunska-Regular.ttf);
 }
 html{
     padding: 15px;
     margin: 0px;
+}
+h1{
+    font-family: 'Antykwa';
 }
 
 h1.banner{
@@ -24,8 +27,10 @@ h1.banner{
     text-align: center;
     line-height: 300%;
     font-size: 45px;
-   
     
+}
+.empty-space{
+    height: 100px;
 }
 .maincontent{
     position: relative;
@@ -47,10 +52,11 @@ h1.zaprojektowanesymbole{
 }
 
 
-h1.par{
+p{
     font-family: 'Antykwa';
     text-align: center;
     text-align: justify;
+    font-size: 25px;
 }
 .buttons{
     position: relative;
@@ -60,15 +66,21 @@ h1.par{
     height:100%;
     display: flex;
 }
-.kapitula-wrapper{
-    width: 40%;
-    margin: auto;
+.description-images-wrapper{
+    display: flex;
+    width: 100%
 }
-h4.kapitula-label{
-    text-align: center;
+.image-wrapper{
+    width: 30%;
+    margin: auto
 }
-.kapitula{
+.image-wrapper > img{
     width:100%
+}
+.image-wrapper > p.image-label{
+    text-align: center;
+    font-family: 'Antykwa';
+    font-size: 25px;
 }
 h1.historia{
     font-size: 45px;
