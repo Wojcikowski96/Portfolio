@@ -83,7 +83,7 @@ mysqli_close($con);
 </div>
 <div class= "about-us-on-news-sidebar">
     <div class= "header">
-        <h1 style = "font-size: 40px; color: white; margin-top: auto; margin-bottom: auto">Skontaktuj się<br>z nami</h1>
+        <h1 style = "font-size: 30px; color: white; margin-top: auto; margin-bottom: auto">Skontaktuj się<br>z nami</h1>
     </div>
     <div class="wrapper">
     <form class="form">

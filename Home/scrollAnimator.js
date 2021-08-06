@@ -4,8 +4,7 @@
         if(i == 0){
             $(this).css({opacity: '1', left: '0px',});
         }
-
-          
+ 
       }); 
       
       /* Every time the window is scrolled ... */

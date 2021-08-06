@@ -81,6 +81,12 @@ h1.par{
     width: 40%;
     margin: auto;
 }
+
+.kapitula-wrapper > p{
+    font-size: 20px;
+    text-align: center;
+ 
+}
 h4.kapitula-label{
     text-align: center;
 }

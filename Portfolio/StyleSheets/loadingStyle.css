@@ -1,0 +1,19 @@
+.loading-wrapper{
+  margin-top: 40px;
+  display: flex;
+  height: 400px;
+}
+.loading-inner{
+  background-color:darkgrey;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  opacity: 0.25;
+}
+@keyframes bounce { 
+  0% { transform: translateX(50px); }
+  100% { transform: translateX(-50px); }
+}

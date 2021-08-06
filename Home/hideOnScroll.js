@@ -4,6 +4,6 @@ $(window).on('scroll', function () {
         $('.about-us-wrapper').stop().animate({height: "120px"},200);
     }
     else {
-         $('.about-us-wrapper').stop().animate({height: "490px", opacity: '1'},200);   
+         $('.about-us-wrapper').stop().animate({height: "420px", opacity: '1'},200);   
     }
 });
